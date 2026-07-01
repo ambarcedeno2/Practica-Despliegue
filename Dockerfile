@@ -10,7 +10,7 @@ COPY package*.json ./
 COPY index.js .
 
 # Instalar dependencias
-RUN npm ci
+RUN yarn install
 
 # Exponer el puerto de la aplicación
 EXPOSE 3000
